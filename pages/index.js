@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import HomeSection from "../components/HomeSection";
 import AboutSection from "../components/AboutSection";
+import ProjectsSection from "../components/ProjectsSection";
 
 function HomePage() {
   return (
@@ -14,7 +15,9 @@ function HomePage() {
         <section id="about">
           <AboutSection />
         </section>
-        <section className="bg-gray-50" id="project"></section>
+        <section className="bg-gray-50" id="projects">
+          <ProjectsSection />
+        </section>
         <section id="contact"></section>
       </div>
     </>

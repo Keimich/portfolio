@@ -10,15 +10,15 @@ export default function AboutSection() {
             className="rounded-3xl"
             src="/img/programming.jpg"
             alt="programming"
-            width={400}
-            height={400}
+            width={500}
+            height={500}
           />
           <div className="flex flex-col px-4 py-4 gap-4">
             <h3 className="text-blue-500 text-xl">About Me</h3>
             <h4 className="text-xl">
               A Full-Stack Developer <br /> based in São Paulo, Brazil. 🇧🇷
             </h4>
-            <p className="text-gray-500">
+            <p className="text-gray-500 text-lg">
               I work as a junior developer, since 2021, for companies within the
               Locaweb group.
               <br />
