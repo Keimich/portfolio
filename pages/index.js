@@ -7,13 +7,14 @@ function HomePage() {
   return (
     <>
       <Navbar />
-      <div className="container flex flex-col">
-        <section id="home">
+      <div className="flex flex-col">
+        <section className="bg-gray-50" id="home">
           <HomeSection />
         </section>
         <section id="about">
+          <AboutSection />
         </section>
-        <section id="project"></section>
+        <section className="bg-gray-50" id="project"></section>
         <section id="contact"></section>
       </div>
     </>

@@ -20,7 +20,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-white px-8 py-6 drop-shadow-md">
+    <nav className="bg-white fixed px-8 py-6 w-screen drop-shadow-md">
       <div className="flex justify-between items-center">
         <div className="text-center text-xl font-bold">
           <a href="/">Jan.dev</a>

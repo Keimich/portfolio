@@ -3,13 +3,13 @@ import Image from "next/image";
 
 export default function HomeSection() {
   return (
-    <>
+    <div className="container">
       <div className="flex px-4 py-4 pt-32 gap-8 justify-center items-center">
         <div className="flex flex-col gap-4">
           <h1 className="text-7xl">Full-Stack Developer</h1>
           <p className="text-3xl flex-wrap">
             Hello, I'm Jan Keimich. A Full-Stack Developer based in São Paulo,
-            Brazil.
+            Brazil. 🇧🇷
           </p>
           <div className="flex gap-4">
             <a href="https://www.linkedin.com/in/jan-keimich-25053015a/" target="_blank">
@@ -28,7 +28,7 @@ export default function HomeSection() {
           height={450}
         />
       </div>
-      <div className="flex px-4 gap-4 items-center text-center">
+      <div className="flex px-4 pb-8 gap-4 items-center text-center">
         <p className="text-2xl">Tech Stack</p>
         <p> | </p>
         <div className="flex gap-4 text-4xl">
@@ -39,6 +39,6 @@ export default function HomeSection() {
           <i className="cursor-pointer text-violet-400 fa-brands fa-php"></i>
         </div>
       </div>
-    </>
+    </div>
   );
 }
