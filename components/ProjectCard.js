@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ProjectCard() {
   return (
-    <div className="bg-neutral-50 px-8 py-8 gap-4 flex rounded-2xl drop-shadow-md">
+    <div className="bg-white px-8 py-8 gap-4 flex rounded-2xl drop-shadow-md">
       <Image
         className="rounded-2xl drop-shadow-md"
         src="/img/consulta-cep.jpeg"
@@ -11,7 +11,7 @@ export default function ProjectCard() {
         width={650}
         height={650}
       />
-      <div className="flex flex-col px-4 py-4 gap-8">
+      <div className="flex flex-col px-4 py-4 gap-6">
         <h3>Consulta Cep</h3>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting

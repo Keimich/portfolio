@@ -20,12 +20,15 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-white fixed px-8 py-6 w-screen drop-shadow-md">
+    <nav
+      className="bg-white fixed px-8 py-6 w-full drop-shadow-md"
+      style={{ "z-index": 1 }}
+    >
       <div className="flex justify-between items-center">
-        <div className="text-center text-xl font-bold">
+        <div className="text-center text-xl">
           <a href="/">Jan.dev</a>
         </div>
-        <div className="text-center text-xl font-bold flex gap-4 hidden md:flex">
+        <div className="text-center text-xl flex gap-4 hidden md:flex">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>

@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function AboutSection() {
   return (
     <div className="bg-white">
-      <div className="container pb-8">
-        <div className="flex px-4 py-4 pt-32 gap-4">
+      <div className="container">
+        <div className="flex px-4 py-32 gap-4">
           <Image
             className="rounded-3xl"
             src="/img/programming.jpg"

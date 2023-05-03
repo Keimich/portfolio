@@ -28,7 +28,7 @@ export default function HomeSection() {
           height={450}
         />
       </div>
-      <div className="flex px-4 pb-8 gap-4 items-center text-center">
+      <div className="flex px-4 pb-16 gap-4 items-center text-center">
         <p className="text-2xl">Tech Stack</p>
         <p> | </p>
         <div className="flex gap-4 text-4xl">

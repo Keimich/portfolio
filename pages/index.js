@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import HomeSection from "../components/HomeSection";
 import AboutSection from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 
 function HomePage() {
   return (
@@ -18,8 +20,11 @@ function HomePage() {
         <section className="bg-gray-50" id="projects">
           <ProjectsSection />
         </section>
-        <section id="contact"></section>
+        <section id="contact">
+          <ContactSection />
+        </section>
       </div>
+      <Footer />
     </>
   );
 }
