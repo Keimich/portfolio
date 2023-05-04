@@ -19,11 +19,18 @@ export default function Navbar() {
     });
   }, []);
 
+  function closeMobileMenu() {
+    let button = document.querySelector("[data-mobile-menu]");
+    let closeButton = document.querySelector("#closeBtn");
+    let mobileMenu = document.getElementById("mobile-menu");
+
+    button.classList.toggle("hidden");
+    closeButton.classList.toggle("hidden");
+    mobileMenu.classList.toggle("hidden");
+  }
+
   return (
-    <nav
-      className="bg-white fixed px-8 py-6 w-full drop-shadow-md"
-      style={{ "z-index": 1 }}
-    >
+    <nav className="bg-white fixed w-full top-0 px-8 py-6 shadow-md">
       <div className="flex justify-between items-center">
         <div className="text-center text-xl">
           <a href="/">Jan.dev</a>
@@ -48,11 +55,19 @@ export default function Navbar() {
 
       {/* mobile menu */}
       <div className="hidden" id="mobile-menu">
-        <div className="flex flex-col text-center gap-4 h-screen pt-60">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+        <div className="flex flex-col text-center text-2xl pb-80 gap-4 h-screen justify-center">
+          <a href="#home" onClick={closeMobileMenu}>
+            Home
+          </a>
+          <a href="#about" onClick={closeMobileMenu}>
+            About
+          </a>
+          <a href="#projects" onClick={closeMobileMenu}>
+            Projects
+          </a>
+          <a href="#contact" onClick={closeMobileMenu}>
+            Contact
+          </a>
         </div>
       </div>
     </nav>

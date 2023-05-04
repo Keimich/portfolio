@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function ProjectCard() {
   return (
-    <div className="bg-white px-8 py-8 gap-4 flex rounded-2xl drop-shadow-md">
+    <div className="bg-white px-8 py-8 gap-4 flex rounded-2xl shadow-md max-md:flex-col max-md:px-4">
       <Image
-        className="rounded-2xl drop-shadow-md"
+        className="rounded-2xl shadow-md"
         src="/img/consulta-cep.jpeg"
         alt="Consulta Cep"
         width={650}
@@ -25,10 +25,10 @@ export default function ProjectCard() {
           including versions of Lorem Ipsum.
         </p>
         <div className="flex gap-4 justify-center items-center">
-          <span className="bg-white px-4 py-4 rounded-md drop-shadow-md">
+          <span className="bg-white px-4 py-4 rounded-md shadow-md">
             Next.js
           </span>
-          <span className="bg-white px-4 py-4 rounded-md drop-shadow-md">
+          <span className="bg-white px-4 py-4 rounded-md shadow-md">
             Tailwind CSS
           </span>
         </div>

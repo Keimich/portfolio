@@ -3,12 +3,12 @@ import React from "react";
 export default function ContactSection() {
   return (
     <div className="container">
-      <div className="flex flex-col px-4 py-32 gap-4">
+      <div className="flex flex-col px-4 py-32 gap-4 max-md:py-16 max-md:text-center max-md:gap-8">
         <h3 className="text-blue-500">Contact</h3>
         <h4>Hey, let's work together?</h4>
-        <div className="flex gap-4 justify-between">
-          <div className="flex gap-4">
-            <div className="bg-white flex justify-center items-center w-14 h-14 rounded-full drop-shadow-md">
+        <div className="flex gap-4 justify-between max-md:flex-col max-md:items-center max-md:gap-8">
+          <div className="flex gap-4 max-md:flex-col max-md:items-center">
+            <div className="bg-white flex justify-center items-center w-14 h-14 rounded-full shadow-md">
               <i className="fa-solid fa-location-dot text-red-600 text-2xl"></i>
             </div>
             <div className="flex flex-col gap-2">
@@ -16,8 +16,8 @@ export default function ContactSection() {
               <a>São Paulo, Brazil 🇧🇷</a>
             </div>
           </div>
-          <div className="flex gap-4">
-            <div className="bg-white flex justify-center items-center w-14 h-14 rounded-full drop-shadow-md">
+          <div className="flex gap-4 max-md:flex-col max-md:items-center">
+            <div className="bg-white flex justify-center items-center w-14 h-14 rounded-full shadow-md">
               <i className="fa-regular fa-paper-plane text-blue-500 text-2xl"></i>
             </div>
             <div className="flex flex-col gap-2">
@@ -25,8 +25,8 @@ export default function ContactSection() {
               <a href="mailto:jan.keimich@gmail.com">jan.keimich@gmail.com</a>
             </div>
           </div>
-          <div className="flex gap-4">
-            <div className="bg-white flex justify-center items-center w-14 h-14 rounded-full drop-shadow-md">
+          <div className="flex gap-4 max-md:flex-col max-md:items-center">
+            <div className="bg-white flex justify-center items-center w-14 h-14 rounded-full shadow-md">
               <i className="fa-brands fa-whatsapp text-green-600 text-2xl"></i>
             </div>
             <div className="flex flex-col gap-2">
