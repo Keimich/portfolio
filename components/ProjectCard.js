@@ -6,23 +6,42 @@ export default function ProjectCard() {
     <div className="bg-white px-8 py-8 gap-4 flex rounded-2xl shadow-md max-md:flex-col max-md:px-4">
       <Image
         className="rounded-2xl shadow-md"
-        src="/img/consulta-cep.jpeg"
+        src="/img/consulta-cepV2.jpeg"
         alt="Consulta Cep"
         width={650}
         height={650}
       />
       <div className="flex flex-col px-4 py-4 gap-6">
-        <h3>Consulta Cep</h3>
+        <h3 className="text-green-700 font-medium">Consulta Cep</h3>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Consulta CEP is an application made in Next.js and Tailwind CSS where
+          it is possible to query general information of a zip code. As soon as
+          the zip code query is made in the{" "}
+          <a
+            className="text-green-700"
+            href="https://viacep.com.br/"
+            target="_blank"
+          >
+            Viacep API
+          </a>
+          , the request is saved in a MySql database hosted at{" "}
+          <a
+            className="text-green-700"
+            href="https://planetscale.com/"
+            target="_blank"
+          >
+            Planetscale
+          </a>
+          . All communication between the application and the bank is done
+          through the{" "}
+          <a
+            className="text-green-700"
+            href="https://www.prisma.io/"
+            target="_blank"
+          >
+            Prisma ORM
+          </a>
+          .
         </p>
         <div className="flex gap-4 justify-center items-center">
           <span className="bg-white px-4 py-4 rounded-md shadow-md">
@@ -35,7 +54,7 @@ export default function ProjectCard() {
         <div className="flex gap-4 justify-center items-center text-xl">
           <a
             className="flex gap-2 items-center"
-            href="https://github.com/Keimich"
+            href="https://github.com/Keimich/consulta-cep"
             target="_blank"
           >
             GitHub
@@ -43,7 +62,7 @@ export default function ProjectCard() {
           </a>
           <a
             className="flex gap-2 items-center"
-            href="https://github.com/Keimich"
+            href="https://consulta-cep-keimich.vercel.app/"
             target="_blank"
           >
             Live Demo

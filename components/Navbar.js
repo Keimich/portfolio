@@ -33,7 +33,7 @@ export default function Navbar() {
     <nav className="bg-white fixed w-full top-0 px-8 py-6 shadow-md">
       <div className="flex justify-between items-center">
         <div className="text-center text-xl">
-          <a href="/">Jan.dev</a>
+          <a href="/">Jan.Keimich</a>
         </div>
         <div className="text-center text-xl flex gap-4 hidden md:flex">
           <a href="#home">Home</a>
