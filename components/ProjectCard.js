@@ -62,7 +62,7 @@ export default function ProjectCard() {
           </a>
           <a
             className="flex gap-2 items-center"
-            href="https://consulta-cep-keimich.vercel.app/"
+            href="https://consulta-cep.keimich.com/"
             target="_blank"
           >
             Live Demo
