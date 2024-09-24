@@ -187,6 +187,18 @@ footer {
     }
 }
 
+.cd-theme {
+    font-size: 20px;
+
+    &.dark::before {
+        content: "🌕";
+    }
+
+    &.light::before {
+        content: "☀️";
+    }
+}
+
 /* Telas >= 1200px */
 @media (min-width: 1200px) {
     main {

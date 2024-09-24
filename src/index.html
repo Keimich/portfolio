@@ -26,6 +26,7 @@
                     <h5><a href="#contact">Contato</a></h5>
                 </li>
             </ul>
+            <a class="btn cd-theme dark" id="cd-theme"></a>
         </nav>
     </header>
     <main>
@@ -269,5 +270,21 @@
         </div>
     </footer>
 </body>
+
+<script>
+    const btnCdTheme = document.getElementById('cd-theme');
+    btnCdTheme.addEventListener('click', () => {
+        const theme = document.documentElement.getAttribute('data-theme');
+        if (theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'light');
+            btnCdTheme.classList.remove('light');
+            btnCdTheme.classList.add('dark');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            btnCdTheme.classList.remove('dark');
+            btnCdTheme.classList.add('light');
+        }
+    });
+</script>
 
 </html>
