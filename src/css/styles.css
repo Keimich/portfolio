@@ -6,6 +6,7 @@
 
 header {
     scroll-snap-align: start;
+    box-shadow: var(--box-shadow-light);
 }
 
 header>nav {
@@ -89,6 +90,7 @@ main>section {
         object-fit: cover;
         border-radius: 8px;
         height: 40vh;
+        box-shadow: var(--box-shadow-light);
     }
 }
 
@@ -112,10 +114,12 @@ main>section {
         display: flex;
         flex-direction: column;
         gap: var(--spacing-medium);
-        border: 1px solid var(--accent-500);
-        padding: 12px;
+        border: 1px solid var(--accent-300);
+        padding: var(--spacing-medium);
         border-radius: 8px;
         min-height: fit-content;
+        box-shadow: var(--box-shadow-light);
+        background: var(--background-100);
 
         .project-img {
             grid-column: span 7;
