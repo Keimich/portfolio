@@ -1,20 +1,11 @@
-# Imagem base Node.js
-FROM node:16-alpine
+# Usar a imagem oficial do Nginx
+FROM nginx:alpine
 
-# Diretório de trabalho
-WORKDIR /home/portfolio
+# Remover a configuração padrão do Nginx
+RUN rm /etc/nginx/conf.d/default.conf
 
-# Copiar o package.json e o package-lock.json
-COPY package*.json ./
+# Copiar a nossa configuração personalizada do Nginx
+COPY nginx/default.conf /etc/nginx/conf.d/
 
-# Instalar as dependências
-RUN npm install
-
-# Copiar todo o código fonte para o container
-COPY . .
-
-# Expor a porta 3000 para acesso externo
-EXPOSE 3000
-
-# Comando a ser executado ao iniciar o container
-CMD ["npm", "run", "dev"]
+# Copiar os arquivos da aplicação para o diretório padrão do Nginx
+COPY src /usr/share/nginx/html
