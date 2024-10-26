@@ -1,5 +1,9 @@
 @import url('root.css');
 
+.hidden {
+    display: none !important;
+}
+
 .color-white {
     color: var(--text-50);
 }
@@ -199,6 +203,18 @@ footer {
     }
 }
 
+.cards-container {
+    display: inline-flex;
+    gap: 8px;
+
+    >button {
+        appearance: none;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+}
+
 /* Telas >= 1200px */
 @media (min-width: 1200px) {
     main {
@@ -238,6 +254,10 @@ footer {
             .project-content {
                 justify-content: space-between;
             }
+        }
+
+        .cards-container {
+            gap: var(--spacing-medium);
         }
     }
 
