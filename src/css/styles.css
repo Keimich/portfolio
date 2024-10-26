@@ -215,6 +215,25 @@ footer {
     }
 }
 
+/* Telas >= 1024px */
+@media (min-width: 1024px) {
+    #projects {
+        .card {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: var(--spacing-medium);
+
+            .project-content {
+                justify-content: space-between;
+            }
+        }
+
+        .cards-container {
+            gap: var(--spacing-medium);
+        }
+    }
+}
+
 /* Telas >= 1200px */
 @media (min-width: 1200px) {
     main {
@@ -241,22 +260,6 @@ footer {
         .cards {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            gap: var(--spacing-medium);
-        }
-    }
-
-    #projects {
-        .card {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: var(--spacing-medium);
-
-            .project-content {
-                justify-content: space-between;
-            }
-        }
-
-        .cards-container {
             gap: var(--spacing-medium);
         }
     }
