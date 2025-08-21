@@ -1,5 +1,3 @@
-import React from 'react';
-
 const JsIcon = ({ className }: { className?: string }) => {
   return (
     <svg

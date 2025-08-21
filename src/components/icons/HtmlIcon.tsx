@@ -1,5 +1,3 @@
-import React from 'react';
-
 const HtmlIcon = ({ className }: { className?: string }) => {
   return (
     <svg
