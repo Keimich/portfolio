@@ -7,12 +7,12 @@ const Footer = () => {
       <div className="container flex items-center justify-between">
         <p className="text-sm">
           <a
-            href="https://keimich.com/"
+            href="https://jan.dev.br/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
           >
-            keimich.com
+            jan.dev.br
           </a>
           {' '}
           © {new Date().getFullYear()}
